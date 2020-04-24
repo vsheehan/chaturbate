@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+#screen {
+  width: 1280px;
+  height: 720px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+#bounce-box {
+  height: 720px;
+  width: 300px;
+  position: absolute;
+  right: 30px;
+  top:0;
+}
+
+.tip-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+
+}
+.username {
+  margin-top: 5px;
+  font-family: "Comic Sans MS", serif;
+}
+.heart {
+  background: red;
+  height: 30px;
+  width: 30px;
+  transform: rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .tip {
+    padding-bottom: 12px;
+    font-family: "Comic Sans MS", serif;
+    transform: rotate(45deg);
+  }
+
+  &:before, &:after  {
+    content: '';
+    background: red;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  &:before {
+    top: -15px;
+    left: 0;
+  }
+  &:after {
+    left: 15px;
+  }
+}
