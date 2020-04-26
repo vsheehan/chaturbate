@@ -150,6 +150,96 @@ body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #o
   text-align: center;
   line-height: 1.2;
 }
+body.clean-layout #defchat .section .video-box #player #movie_holder {
+  padding-top: 0 !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder > div:nth-child(2) {
+  padding: 0 !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af {
+  background: transparent !important;
+  position: unset !important;
+  overflow: unset !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf {
+  display: flex;
+  flex-direction: column;
+  overflow: unset !important;
+  position: unset !important;
+  width: 170px !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(1) {
+  display: none;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(2) {
+  height: auto !important;
+  width: 100% !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(2) > div {
+  background-color: lightgrey;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100% !important;
+  height: unset !important;
+  border: none !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(2) > div select {
+  margin: 0 !important;
+  width: 100% !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(2) > div:nth-child(2) > div:nth-of-type(2) {
+  float: none !important;
+  padding-top: 5px !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(2) > div:nth-child(2) > div:nth-of-type(2) > div {
+  float: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+  width: 100% !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(3) {
+  width: 100% !important;
+  float: none !important;
+  padding: 0 !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(3) video {
+  margin: 0 !important;
+  width: 100% !important;
+  height: 95px !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(3) div:nth-child(2) {
+  margin: 0 !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(3) div:nth-child(3) button {
+  margin: 0 !important;
+  width: 100% !important;
+  font-size: 14px !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #lf > div:nth-child(3) div:nth-child(4) {
+  display: none;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #sf > div:nth-child(1) video {
+  margin: 0 !important;
+  width: 100% !important;
+  height: 95px !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #sf > div:nth-child(1) > div > div {
+  margin: 0 auto;
+  width: 100% !important;
+  float: none !important;
+  border: none !important;
+  text-align: center;
+  font-size: 12px !important;
+  display: flex;
+  flex-direction: column;
+  height: auto !important;
+}
+body.clean-layout #defchat .section .video-box #player #movie_holder #movie #Af #sf > div:nth-child(1) > div > div button {
+  font-size: 12px !important;
+  float: none !important;
+}
 body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel {
   width: 100%;
 }

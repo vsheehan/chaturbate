@@ -194,6 +194,132 @@ body.clean-layout {
 
 
           }
+
+
+          #movie_holder {
+            padding-top: 0 !important;
+            & > div:nth-child(2) {
+
+              padding: 0 !important;
+            }
+
+            #movie {
+              #Af {
+                background: transparent !important;
+                //height: unset !important;
+                position: unset !important;
+                overflow: unset !important;
+                #lf {
+
+                  display: flex;
+                  flex-direction: column;
+                  overflow: unset !important;
+                  position: unset !important;
+                  width: 170px !important;
+                  & > div:nth-child(1) {
+                    display: none;
+                  }
+
+
+                  & > div:nth-child(2) {
+                    height: auto !important;
+                    width: 100% !important;
+                    //Microphone / Camera Select Boxes
+                    & > div {
+                      background-color: lightgrey;
+                      box-sizing: border-box;
+                      padding: 5px;
+                      width: 100% !important;
+                      height: unset !important;
+                      border: none !important;
+                      select {
+                        margin: 0 !important;
+                        width: 100% !important;
+                      }
+                    }
+
+                    //Input Level
+                    & > div:nth-child(2) {
+                      & > div:nth-of-type(2) {
+                        float: none !important;
+                        padding-top: 5px !important;
+
+                        > div {
+                          float: none !important;
+                          padding: 0 !important;
+                          margin: 0 !important;
+
+                        }
+                      }
+                      & > div:nth-child(3) > div:nth-child(2) {
+                        width: 100% !important;
+                      }
+
+                    }
+
+
+                  }
+
+                  & > div:nth-child(3) {
+                    width: 100% !important;
+                    float: none !important;
+                    padding: 0 !important;
+                    video {
+                      margin: 0 !important;
+                      width: 100% !important;
+                      height: 95px !important;
+                    }
+                    div:nth-child(2) {
+                      margin: 0 !important;
+                    }
+                    div:nth-child(3) {
+                      button {
+                        margin: 0 !important;
+                        width: 100% !important;
+                        font-size: 14px !important;
+                      }
+                    }
+                    div:nth-child(4) {
+                      display: none;
+                    }
+                  }
+
+                }
+                #sf {
+                  & > div:nth-child(1) {
+                    video {
+                      margin: 0 !important;
+                      width: 100% !important;
+                      height: 95px !important;
+                    }
+
+                    & > div {
+                      & > div {
+                        margin: 0 auto;
+                        width: 100% !important;
+                        float: none !important;
+                        border: none !important;
+                        text-align: center;
+                        font-size: 12px !important;
+                        display: flex;
+                        flex-direction: column;
+                        height: auto !important;
+                        button {
+                          font-size: 12px !important;
+                          float: none !important;
+                        }
+                      }
+                    }
+
+                  }
+                }
+
+              }
+
+            }
+          }
+
+
         }
 
 
@@ -235,9 +361,6 @@ body.clean-layout {
 
         }
 
-
-
-
         #fps_chart {
           display: none;
         }
@@ -255,3 +378,5 @@ body:not(.clean-layout) {
     display: none;
   }
 }
+
+
