@@ -2,7 +2,7 @@
 $sql_args = [
 	'server'   => 'localhost',
 	'user'     => 'chaturbate',
-	'pass'     => 'xf21l2p5S7',
+	'pass'     => '**********',
 	'database' => 'chaturbate',
 ];
 
