@@ -1,0 +1,192 @@
+body.clean-layout .ad {
+  display: none;
+}
+body.clean-layout .c-1 {
+  margin: 0 !important;
+}
+body.clean-layout #defchat .section {
+  height: auto !important;
+  display: flex;
+  flex-direction: row;
+}
+body.clean-layout #defchat .section .chat-holder {
+  margin: 0;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  grid-template-rows: 32px calc(100% - 64px) 32px;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box div.chat-list {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box div.chat-list ~ .chat-list {
+  grid-column: 2 / span 1;
+  border-left: 1px solid #7f7f7f;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box div:nth-child(3) {
+  display: block !important;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box #user-count-wrapper {
+  display: block !important;
+  margin: 0 0 10px;
+  padding: 3px 0 0 3px;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  background: #7f7f7f;
+  text-align: center;
+  color: white;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box #pm-wrapper {
+  display: block !important;
+  margin: 0 0 10px;
+  padding: 3px 0 0 3px;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  background: #7f7f7f;
+  text-align: center;
+  color: white;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box div.users-list > div:nth-child(1) {
+  display: none;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box .users-list {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  display: block !important;
+  border-left: 1px solid #7f7f7f;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box .chat-form {
+  grid-column: 1 / span 3;
+  grid-row: 3 / span 1;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box ul.buttons {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+body.clean-layout #defchat .section .chat-holder .chat-box ul.buttons li a[data-tab=users] {
+  display: none;
+}
+body.clean-layout #defchat .section .video-box {
+  margin: 0;
+  width: 175px;
+  min-width: 175px;
+}
+body.clean-layout #defchat .section .video-box #player {
+  width: 150px !important;
+  height: auto !important;
+}
+body.clean-layout #defchat .section .video-box #player #obs {
+  padding: 5px;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_video {
+  height: auto !important;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_room_status_block {
+  height: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_room_status_block #obs_room_status {
+  padding-top: 0;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats {
+  display: flex;
+  flex-direction: column;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_rejected {
+  width: 100%;
+  height: auto;
+  margin: 5px 0px 0px;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_rejected h4 {
+  margin: 0;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #message_status_img {
+  width: 100%;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #message_status_img #message_status_img {
+  height: 50px;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block {
+  width: 100%;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_feedback {
+  height: auto !important;
+  width: 100%;
+  padding: 0;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_feedback #obs_stream_feedback_box {
+  width: 100%;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_details {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_details > div {
+  margin: 0 auto;
+  width: 100%;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_details > div:not(:first-of-type) {
+  margin-top: 15px;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_graphs {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  float: none;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_graphs #obs_stream_graph_fps,
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_graphs #obs_stream_graph_bitrate {
+  width: 100%;
+  float: none;
+}
+body.clean-layout #defchat .section .video-box #player #obs #obs_stream_stats #obs_stream_stats_block #obs_stream_region {
+  text-align: center;
+  line-height: 1.2;
+}
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel {
+  width: 100%;
+}
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_away {
+  padding: 0;
+}
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_group_show table,
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_private_show table {
+  width: 100%;
+}
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_group_show table tr th,
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_private_show table tr th,
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_group_show table tr td,
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_private_show table tr td {
+  padding: 0;
+  width: auto;
+}
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_group_show .broadcaster_token_options,
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_private_show .broadcaster_token_options {
+  position: unset;
+}
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_default .broadcast_intro {
+  width: auto;
+  height: auto;
+}
+body.clean-layout #defchat .section .video-box .tip_shell.goal_host_panel .broadcaster_panel_default .broadcaster_token_options {
+  width: auto;
+  position: unset;
+}
+body.clean-layout #defchat .section .video-box #fps_chart {
+  display: none;
+}
+body.clean-layout #defchat .section .video-box #bitrate_chart {
+  display: none;
+}
+body:not(.clean-layout) #pm-wrapper,
+body:not(.clean-layout) #user-count-wrapper {
+  display: none;
+}
+/*# sourceMappingURL=clean-layout.css.map */

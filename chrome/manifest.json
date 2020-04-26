@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"name": "My Cool Extension",
+	"name": "Chaturbate Manipulator",
 	"version": "0.1",
 	"content_scripts": [
 		{
@@ -8,16 +8,24 @@
 				"https://chaturbate.com/b/*",
 				"https://testbed.cb.dev/b/*"
 			],
-			"js": ["jquery.min.js", "payload.js"]
+			"js": ["jquery.min.js", "payload.js", "clean-layout.js"],
+			"css": ["clean-layout.css"]
 		}
 	],
-	"browser_action": {
-		"default_icon": "icon.png"
-	},
+
 	"background": {
 		"scripts":  ["jquery.min.js", "background.js"]
 	},
 	"permissions": [
 		"https://dev.techdisorder.com/"
-	]
+	],
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_icon": "icon-128.png"
+	},
+	"icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	}
 }

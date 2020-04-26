@@ -2,7 +2,7 @@
 chrome.runtime.sendMessage(document.title);
 console.log('Chaturbate Payload Injected...');
 
-var app = {};
+var app = app || {};
 
 /* Select the users name from the header, and use that as the room name */
 app.room = $('.user_information_header_username').text();
@@ -61,7 +61,16 @@ app.observer = new MutationObserver(function(mutations) {
                             if ( reg.length > 2 ) {
                                 data.message = reg[3];
                             }
+                        } else {
+                            regex = /has (joined|left) the room./
+                            reg = message.match(regex);
+                            if ( reg && reg.length > 1 ) {
+                                $(document).trigger('userChange', [ data.user, reg[1] ]);
+                            }
                         }
+
+
+
                     }
                     /** TODO: Add User join / leave extraction */
 
@@ -86,3 +95,19 @@ setTimeout(function(){
     console.log('Chaturbate Payload Listening...');
 }, 1000);
 
+
+/***************************************************************************************
+ * Clean Layout
+ ***************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+//$('div.chat-box').append(app.userCount);

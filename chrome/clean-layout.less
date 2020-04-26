@@ -1,0 +1,257 @@
+body.clean-layout {
+  .ad {
+    display: none;
+  }
+
+  .c-1 {
+    margin: 0 !important;
+  }
+
+  #defchat {
+
+    .section {
+      height: auto !important;
+      display: flex;
+      flex-direction: row;
+
+      .chat-holder {
+        margin: 0;
+        .chat-box {
+          display: grid;
+          grid-template-columns: 40% 40% 20%;
+          grid-template-rows: 32px calc(100% - 64px) 32px;
+
+          div.chat-list {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1;
+            & ~ .chat-list {
+              grid-column: 2 / span 1;
+              border-left: 1px solid #7f7f7f;
+            }
+          }
+
+
+
+          div:nth-child(3) {
+            display: block !important;
+          }
+
+          #user-count-wrapper {
+            display: block !important;
+            margin: 0 0 10px;
+            padding: 3px 0 0 3px;
+            grid-column: 3 / span 1;
+            grid-row: 1 / span 1;
+            background: #7f7f7f;
+            text-align: center;
+            color: white;
+          }
+
+
+          #pm-wrapper {
+            display: block !important;
+            margin: 0 0 10px;
+            padding: 3px 0 0 3px;
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+            background: #7f7f7f;
+            text-align: center;
+            color: white;
+          }
+
+          div.users-list > div:nth-child(1) {
+            display: none;
+          }
+
+
+
+
+          .users-list {
+            grid-column: 3 / span 1;
+            grid-row: 2 / span 1;
+            display: block !important;
+            border-left: 1px solid #7f7f7f;
+          }
+
+          .chat-form {
+            grid-column: 1 / span 3;
+            grid-row: 3 / span 1;
+          }
+
+          ul.buttons {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+            li a[data-tab=users] {
+              display: none;
+            }
+
+          }
+
+
+
+        }
+      }
+
+      .video-box {
+        margin: 0;
+        width: 175px;
+        min-width: 175px;
+        //height: 1000px;
+        #player {
+          width: 150px !important;
+          height: auto !important;
+          #obs {
+            padding: 5px;
+
+            #obs_video {
+              height: auto !important;
+            }
+
+            #obs_room_status_block {
+              height: auto;
+              padding: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              #obs_room_status {
+                padding-top: 0;
+              }
+
+
+              }
+
+            #obs_stream_stats {
+              display: flex;
+              flex-direction: column;
+
+              #obs_stream_rejected {
+                width: 100%;
+                height: auto;
+                margin: 5px 0px 0px;
+                h4 {
+                  margin: 0;
+                }
+              }
+
+              #message_status_img {
+                width: 100%;
+                #message_status_img {
+                  height: 50px;
+                }
+              }
+
+              #obs_stream_stats_block {
+                width: 100%;
+                #obs_stream_feedback {
+                  height: auto !important;
+                  width: 100%;
+                  padding: 0;
+                  #obs_stream_feedback_box {
+                    width: 100%;
+
+                  }
+                }
+
+                #obs_stream_details {
+                  display: flex;
+                  height: auto;
+                  flex-direction: column;
+                  & > div {
+                    margin: 0 auto;
+                    width: 100%;
+
+                    &:not(:first-of-type) {
+                      margin-top: 15px;
+                    }
+                  }
+                }
+
+                #obs_stream_graphs {
+                  display: flex;
+                  height: auto;
+                  flex-direction: column;
+                  float: none;
+
+                  #obs_stream_graph_fps,
+                  #obs_stream_graph_bitrate  {
+                    width: 100%;
+                    float: none;
+                  }
+
+                }
+
+                #obs_stream_region {
+                  text-align: center;
+                  line-height: 1.2;
+                }
+              }
+
+
+            }
+
+
+
+
+          }
+        }
+
+
+        .tip_shell.goal_host_panel {
+          width: 100%;
+
+          .broadcaster_panel_away {
+            padding: 0;
+          }
+          .broadcaster_panel_group_show,
+          .broadcaster_panel_private_show {
+
+            table {
+              width: 100%;
+              tr {
+                th,td {
+                  padding: 0;
+                  width: auto;
+                }
+              }
+            }
+            .broadcaster_token_options {
+                position: unset;
+            }
+          }
+
+
+          .broadcaster_panel_default {
+            .broadcast_intro {
+              width: auto;
+              height: auto;
+            }
+            .broadcaster_token_options {
+              width: auto;
+              position: unset;
+            }
+
+          }
+
+        }
+
+
+
+
+        #fps_chart {
+          display: none;
+        }
+
+        #bitrate_chart {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+body:not(.clean-layout) {
+  #pm-wrapper, #user-count-wrapper {
+    display: none;
+  }
+}
